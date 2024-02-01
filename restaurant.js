@@ -11,7 +11,7 @@
        
         
         // Set the countdown date for Indian time (replace with your desired end date and time)
-    const countdownDate = new Date("2024-01-31T00:00:00+05:30");
+    const countdownDate = new Date("2024-12-31T00:00:00+05:30");
 
     // Update the countdown every second
     const countdownInterval = setInterval(updateCountdown, 1000);
