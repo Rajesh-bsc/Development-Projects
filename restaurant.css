@@ -1865,7 +1865,7 @@ input:active{
 
 
  /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
+@media (max-width: 600px) { 
     *{
         box-sizing: border-box;
         h1,h2,h3,h4,h5{
