@@ -1890,6 +1890,7 @@ input:active{
     }
     body{
         box-sizing: border-box;
+         overflow-x: hidden;
     }
     .container1{
         height: 500px;
