@@ -1868,23 +1868,28 @@ input:active{
 @media (max-width: 600px) { 
     *{
         box-sizing: border-box;
-        h1,h2,h3,h4,h5{
-            font-family: 'Libre Baskerville', serif;
-            font-family: 'Playfair Display', serif;
-        }
-        p{
-            font-family: 'Libre Baskerville', serif;
-            font-family:'Noto Sans', sans-serif ;
-        }
-        h1{
-            font-size: 22px;
-        }
-        h2{
-            font-size: 20px;
-        }
-        h3,h4,h5,p,span,a{
-            font-size: 16px;
-        }
+      
+        
+    }
+    h1,h2,h3,h4,h5{
+        font-family: 'Libre Baskerville', serif;
+        font-family: 'Playfair Display', serif;
+    }
+    p{
+        font-family: 'Libre Baskerville', serif;
+        font-family:'Noto Sans', sans-serif ;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 26px;
+    }
+    h3,h4,h5,p,span,a{
+        font-size: 16px;
+    }
+    body{
+        box-sizing: border-box;
     }
     .container1{
         height: 500px;
@@ -1907,6 +1912,14 @@ input:active{
         width: 50%;
     }
     
+    .content {
+        padding: 0;
+        margin: 0;
+    }
+    .con-1-text{
+        padding: 0 0 0 20px;
+        margin: 0;
+    }
     .con-1-text h2{
         font-size: 24px;
     }
@@ -1925,7 +1938,7 @@ input:active{
     }
     .container2 .column-con2{
         display: flex;
-        width: 80%;
+        width: 90%;
         margin: auto;
         
         flex-wrap: wrap;
@@ -1959,29 +1972,601 @@ input:active{
     }
     .container3{
         width: 100%;
-        height: 500px;
-        border: 1px solid rgb(11, 31, 148);
-        
+        height: 600px;
+       
+        margin-top: 40px;
+        display: block;
     }
     .container3 .con3-col1 {
         width: 100%;
-        height: auto;
-        border: 1px solid tomato;
+        height: 250px;
+       
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 20px;
+        
     }
     .con3-col2{
         width: 100%;
         height: 300px;
-        margin: 0;
+        margin: 0 10px 0 10px;
         padding: 0;
+       column-gap: 5px;
+       
+    }
+    .con3-col2 .con3-img{
+        column-gap: 10px;
+    }
+    .con3-col2 .con3-img1 img{
+        height: 250px;
+        width: 250px;
     }
     .con3-col1 h3{
-        font-size: 22px;
+        font-size: 24px;
     }
     .con3-col1 p{
         font-size: 16px;
-        line-height: 15px;
+        line-height: 20px;
     }
- }
+    .con3-col1 i{
+        font-size: 26px;
+    }
 
+
+    /* container4 */
+    .container4{
+        height: 1020px;
+        width: 100%;
+        display: block;
+       box-sizing: border-box;
+    }
+    .con4-cot{
+        height: 400px;
+        width: 100%;
+        margin-bottom:50px;
+        padding:0;
+        display: block;
+       
+    }
+    .con4-col1{
+        width: 100%;
+        height: 300px;
+        padding-top: 50px;
+    }
+    .con4-colt1{
+        height: 300px;
+        width: 100%;
+       
+    }
+    .con4-colt2{
+        height: 300px;
+        width: 100%;
+        
+    }
+    .con4-cot1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .con4-cot2 .about-3{
+        width: 80%;
+        height: 80%;
+    }
+    .con4-col2{
+        width: 100%;
+        margin-top: 60px;
+        display: block;
+       margin-left: 0;
+       padding-left:20px ;
+    }
+    .con4-col2 h2{
+        font-size: 26px;
+        width: 100%;
+    }
+    .con4-content-start{
+       
+        padding: 0;
+        margin: 0;
+    }
+    .con4-content{
+        
+        width: 100%;
+    }
+    .con4-content1{
+        width: 50%;
+    }
+    .con4-content2{
+        
+        width: 50%;
+        display: grid;
+        padding: 0;
+        overflow: hidden;
+    }
+    .con4-col2 .con4-content p{
+        font-size: 15px;
+    }
+    .con4-content .ceo{
+       
+        display: grid;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+       
+    }
+    .ceo .ceo-img {
+        width: 100%;
+        
+        display: flex;
+        justify-content: center;
+    }
+    .ceo .ceo-con{
+       
+        width: 100%;
+        text-align: center;
+    }
+    .ceo-con img{
+        width: 180px;
+
+    }
+    .container5{
+        height: 800px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+       
+    }
+    .timer{
+        position: absolute;
+        top: -10%;
+        margin: 0;
+        padding: 0;
+        height: 500px;
+        display: block;
+        flex-wrap: wrap;
+        width: 100%;
+       
+    }
+    .timer .timer1{
+        position: absolute;
+        top: -80px;
+        left: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+        
+    }
+    .timer1 h2{
+        font-size: 26px;
+        width: 100%;
+    }
+    .timer2{
+        position: absolute;
+        left: 25%;
+        top:70%;
+        width: 100%;
+        margin-top: 80px;
+        padding:0;
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: center;
+       padding-bottom: 40px;
+    }
+    .times-circle{
+        
+        width: 50%;
+        height: 150px;
+        
+    }
+    .times-circle img{
+        height: 100px;
+        width: 100px;
+    }
+    .times-circle-1{
+        width: 100%;
+    }
+    .times-circle h4{
+        font-size: 18px;
+    }
+    .times-line{
+        display: none;
+        width:0%;
+    }
+
+    .container6{
+        height: auto;
+        width: 100%;
+    }
+    .container6-title h2{
+       font-size: 26px;
+    }
+    .container6 .con6-box, .con7-box{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .discount-menu{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .discount-menu .discount-img {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        padding: 15px 20px 20px 10px;
+        
+        border-radius: 20px;
+    }
+    .discount-img img{
+        width: 100%;
+        height: 100%;
+       
+        padding-bottom: 20px;
+        border-radius: 20px;
+    }
+    .discount-info{
+        width: 100%;
+    }
+    .discount-info h3{
+        font-size: 20px;
+        
+    }
+    .container7{
+        width: 100%;
+        height: auto;
+        padding-top: 60px;
+       padding-bottom: 60px;
+    }
+    .container7-title{
+        
+        margin: 0;
+    }
+    .container7-title span{
+        padding: 0;
+    }
+    .container7-title h2{
+        font-size: 26px;
+    }
+    .chef-container{
+        width: 100%;
+       
+    }
+    .chef-container .chef-column{
+        display: block;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        width: 95%;
+        margin: auto;
+    }
+    .chef-column1{
+        width: 100%;
+        margin-bottom: 25px;
+       
+    }
+    .chef1-info h3{
+        font-size: 22px;
+    }
+    .container8{
+        padding-top: 60px;
+    }
+    .container8-title h2{
+        padding: 15px 0 0 0;
+        font-size: 26px;
+        margin: 0;
+    }
+    .menu-container{
+        width: 95%;
+        margin: auto;
+        display: block;
+        flex-wrap: wrap;
+       gap:20px;
+    }
+    .main-menu{
+        width: 100%;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        position: relative;
+      
+    }
+    .food-menu{
+        display:block;
+        width: 100%;
+        border: none;
+        position: relative;
+       margin-bottom: 10px;
+    }
+    .main-menu .food-menu:nth-child(2){
+        display: block;
+        position: absolute;
+        top: -2%;
+        bottom: 100%;
+        
+    }
+    .menus{
+        position: absolute;
+        /* top: 30%; */
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+      
+    }
+   
+    .food1-slide{
+        width: 100%;
+        height: 100px;
+        position: relative;
+      display: none;
+    }
+    .food1-slide ol{
+        position: absolute;
+        top: 35%;
+        left: 45%;
+       
+    }
+    .slide1-overlay{
+        display: none;
+    }
+    .food1-slide img{
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+       object-fit: cover;
+    }
+    
+    .food-img img{
+        width: 100%;
+        height: 250px;
+    }
+    .food-info{
+        position: absolute;
+        top: 64%;
+        width: 100%;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-left: 1px solid rgb(197, 197, 197);
+        border-right: 1px solid rgb(197, 197, 197);
+        border-bottom: 1px solid rgb(197, 197, 197);
+        margin-bottom: 20px;
+    }
+
+    /* Add this style to show the current slide */
+    .main-menu .food-menu:nth-child(3),.main-menu .food-menu:nth-child(4) {
+        display: none;
+    }
+    .container9{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        
+        width: 100%;
+        height: 670px;
+    }
+    .container9 .svg2, .svg3{
+        display: none;
+    }
+    .testimonial-title{
+        padding-top: 50px;
+
+    }
+    .testimonial-title h2{
+        font-size: 26px;
+    }
+    .testimonial-container{
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .testimonail-1{
+        /* position: absolute; */
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 350px;
+    }
+    .testimonail-1 .test-img img{
+        height: 100px;
+        width: 100px;
+    }
+    .testimonail-1 p{
+        font-size: 14px;
+        padding: 0 5px 0 5px;
+    }
+    .testimonail-1 h3{
+        font-size: 20px;
+    }
+    .testimonail-1 i{
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
+    .container10{
+        width: 100%;
+        height: 750px;
+       padding-top: 30px;
+    }
+    .contact-container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .contact-column{
+        width: 95%;
+        margin: auto;
+        flex-direction: column;
+
+    }
+    .contact1, .contact2{
+        width: 100%;
+        margin: 0;
+        padding: 0  ;
+        
+    }
+    .contact1 h2{
+        width: 100%;
+        font-size: 26px;
+        line-height: 25px;
+    }
+    .contact1 p{
+        font-size: 16px;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .contact2 .form-box{
+        width: 100%;
+        height: 450px;
+        margin: 0;
+        padding: 0;
+    }
+    .restaurant-form{
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+    .form-container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: block;
+        width: 100%;
+        /* height: 00px; */
+        margin: 0;
+        padding: 0;
+       
+    }
+    .restaurant-form1{
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    .label1 {
+      width: 200%;
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      
+    }
+    .label1 input{
+        width: 200%;
+        margin: 0;
+        padding: 0 0 0 20px;
+    
+    }
+    .form-icon{
+        position: relative;
+    }
+    .form-icon i{
+        position: absolute;
+        width: 100%;
+        right: 0;
+        left: 180%;
+    }
+
+    .container11{
+        height: auto;
+        width: 100%;
+        padding-top: 60px;
+        margin: 0;
+    }
+    .blog-container{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .blog-container-column{
+        width: 95%;
+        margin: auto;
+        padding: 0;
+
+    }
+    .blog-title{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+
+    }
+    .blog-title h2{
+        font-size: 26px;
+    }
+
+    .blogs{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        /* padding-bottom: 130px; */
+        margin-bottom: 130px;
+        row-gap: 100px;
+       
+    }
+    .blog1{
+        width: 100%;
+        height: 490px;
+       
+    }
+    .blog-img {
+        width: 100%;
+        height: 450px;
+    } 
+    .blog-img img{
+        width: 100%;
+        height: 100%;
+    } 
+    .container12{
+        width: 100%;
+        height: 1280px;
+        padding: 0;
+        margin: 0;
+    }
+    .footer-container{
+        width: 95%;
+        margin: auto;
+        padding:70px 0 0 0;
+    }
+    .footer-column{
+        flex-direction: column;
+        row-gap: 20px;
+        width: 100%;
+        height: auto;
+        padding: 0 0 30px 0;
+    }
+    .footer1 h3{
+        font-size: 22px;
+    }
+    .footer1 a{
+        font-size: 16px;
+    }
+    .footer2-content1 h3{
+        font-size: 24px;
+        padding-top: 15px;
+    }
+    .footer-content3{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        row-gap: 15px;
+    }
+    .footer-copyrights p{
+        font-size: 14px;
+    }
+    .footer-copyrights span{
+        font-size: 18px;
+    }
+    .footer-logo, .footer-copyrights, .footer-social{
+        width: 100%;
+        
+        text-align: center;
+    }
+}
