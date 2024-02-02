@@ -1863,12 +1863,13 @@ input:active{
     border: none;
 }
 
-
  /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 600px) { 
+
+ @media (max-width: 600px) { 
     *{
         box-sizing: border-box;
-      
+      /* overflow: hidden; */
+    
         
     }
     h1,h2,h3,h4,h5{
@@ -1890,10 +1891,10 @@ input:active{
     }
     body{
         box-sizing: border-box;
-         overflow-x: hidden;
+        overflow-x: hidden;
     }
     .container1{
-        height: 500px;
+        height: 100vh;
         width: 100%;
     }
     .container1 .row1,.row2,.row3,.row4{
@@ -1911,11 +1912,18 @@ input:active{
     }
     .container1 .content .con-1, .con-2{
         width: 50%;
+        display: flex;
+        align-items: center;
+        height: auto;
+      
     }
     
     .content {
         padding: 0;
         margin: 0;
+        display: flex;
+        align-items: center;
+       
     }
     .con-1-text{
         padding: 0 0 0 20px;
@@ -1946,7 +1954,7 @@ input:active{
         align-items: center;
         padding-top: 50px;
         padding-bottom: 100px;
-        row-gap: 10px;
+        row-gap: 20px;
     }
     .column-con2 .col-1, .col2{
         width: 50%;
@@ -1959,7 +1967,11 @@ input:active{
        
     }
     .col1 h3{
-        font-size: 20px;
+        font-size: 28px;
+    }
+    .col1 em{
+        font-size: 24px;
+        
     }
     .col1 h6{
         font-size: 16px;
@@ -1972,18 +1984,20 @@ input:active{
         display: none;
     }
     .container3{
-        width: 100%;
+        width: 90%;
         height: 600px;
-       
+       padding-top: 50px;
         margin-top: 40px;
-        display: block;
+        /* display: block; */
+        flex-direction: column;
+        row-gap: 30px;
+        margin: auto;
+        
     }
     .container3 .con3-col1 {
         width: 100%;
         height: 250px;
-       
         margin: 0;
-        padding: 0 0 0 20px;
         
     }
     .con3-col2{
@@ -2015,36 +2029,55 @@ input:active{
 
     /* container4 */
     .container4{
-        height: 1020px;
+        height: auto;
         width: 100%;
-        display: block;
+        margin: 0;
+        flex-direction: column;
        box-sizing: border-box;
-    }
-    .con4-cot{
-        height: 400px;
-        width: 100%;
-        margin-bottom:50px;
-        padding:0;
-        display: block;
-       
+       padding-top: 60px;
+       row-gap: 30px;
+      
     }
     .con4-col1{
         width: 100%;
-        height: 300px;
-        padding-top: 50px;
+        height: 600px;
     }
-    .con4-colt1{
-        height: 300px;
-        width: 100%;
+    .con4-cot{
+        height: 100%;
+        width: 95%;
+        /* margin-bottom:50px; */
+        margin: auto;
+        padding:0;
+       
        
     }
-    .con4-colt2{
-        height: 300px;
+    .con4-cot1{
         width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        /* padding-top: 50px; */
+       
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .con4-cot2{
+        height:450px;
+        width: 350px;
+       
+        position: absolute;
+        top: 73%;
+        left: 77%;
         
+        overflow: hidden;
+    }
+    .con4-cot2 .about-3{
+        width: 100%;
+        height: 80%;
     }
     .con4-cot1 img{
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
     .con4-cot2 .about-3{
@@ -2052,11 +2085,12 @@ input:active{
         height: 80%;
     }
     .con4-col2{
-        width: 100%;
-        margin-top: 60px;
+        width: 95%;
+        height: 500px;
+        margin: auto;
         display: block;
-       margin-left: 0;
-       padding-left:20px ;
+       padding: 0 0 0 0;
+      
     }
     .con4-col2 h2{
         font-size: 26px;
@@ -2236,15 +2270,16 @@ input:active{
        
     }
     .chef-container .chef-column{
-        display: block;
-        flex-wrap: wrap;
+        flex-direction: column;
+       
         margin-left: 10px;
         width: 95%;
         margin: auto;
+        row-gap: 30px;
     }
     .chef-column1{
         width: 100%;
-        margin-bottom: 25px;
+       
        
     }
     .chef1-info h3{
@@ -2263,16 +2298,19 @@ input:active{
         margin: auto;
         display: block;
         flex-wrap: wrap;
-       gap:20px;
+        row-gap: 30px;
+       
     }
     .main-menu{
         width: 100%;
         flex-direction: column;
         /* flex-wrap: wrap; */
         position: relative;
+        row-gap: 30px;
       
     }
     .food-menu{
+        row-gap: 30px;
         display:block;
         width: 100%;
         border: none;
@@ -2341,9 +2379,10 @@ input:active{
         margin: 0;
         padding: 0;
         position: relative;
-        
+        flex-direction: column;
         width: 100%;
-        height: 670px;
+        height: 650px;
+        overflow: hidden;
     }
     .container9 .svg2, .svg3{
         display: none;
@@ -2356,22 +2395,26 @@ input:active{
         font-size: 26px;
     }
     .testimonial-container{
-        width: 100%;
-        display: block;
+        width: 95%;
+       right: 0;
+       left: 0;
+       bottom: 0;
         padding: 0;
-        margin: 0;
+        margin: auto;
         position: absolute;
         top: 30px;
-        left: 0;
-        right: 0;
-        bottom: 0;
+        
+
+        
     }
     .testimonail-1{
-        /* position: absolute; */
+        
+        position: relative;
         margin: 0;
         padding: 0;
-        width: 100%;
-        height: 350px;
+        
+        height: 400px;
+        
     }
     .testimonail-1 .test-img img{
         height: 100px;
@@ -2499,6 +2542,7 @@ input:active{
     }
     .blog-title h2{
         font-size: 26px;
+        width: 100%;
     }
 
     .blogs{
@@ -2547,17 +2591,26 @@ input:active{
     .footer1 a{
         font-size: 16px;
     }
+    .footer2{
+        width: 100%;
+        overflow: hidden;
+    }
+    .footer2-box, .footer2-content1{
+        width: 100%;
+        overflow: hidden;
+    }
     .footer2-content1 h3{
         font-size: 24px;
         padding-top: 15px;
     }
     .footer-content3{
         width: 100%;
+        height: 200px;
         flex-direction: column;
         margin: 0;
         padding: 0;
         justify-content: center;
-        row-gap: 15px;
+        row-gap: 20px;
     }
     .footer-copyrights p{
         font-size: 14px;
@@ -2567,7 +2620,7 @@ input:active{
     }
     .footer-logo, .footer-copyrights, .footer-social{
         width: 100%;
-        
+        height: auto;
         text-align: center;
     }
 }
