@@ -29,7 +29,7 @@
         overflow-x: hidden;
     }
     .container1{
-        height: 100vh;
+        height: 90vh;
         width: 100%;
     }
     .container1 .row1,.row2,.row3,.row4{
@@ -775,6 +775,7 @@ line-height:25px;
         height: 1280px;
         padding: 0;
         margin: 0;
+        overflow: hidden;
     }
     .footer-container{
         width: 95%;
@@ -836,4 +837,6 @@ line-height:25px;
         height: auto;
         text-align: center;
     }
+    .footer-social{
+        padding-bottom:30px;
 }
