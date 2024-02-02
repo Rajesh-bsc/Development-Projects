@@ -29,7 +29,7 @@
         overflow-x: hidden;
     }
     .container1{
-        height: 130vh;
+        height: 100vh;
         width: 100%;
     }
     .container1 .row1,.row2,.row3,.row4{
@@ -45,14 +45,7 @@
         height: 70px;
         width: 70px;
     }
-    /* .container1 .content .con-1, .con-2{
-        width: 50%;
-        display: flex;
-        
-        align-items: center;
-        height: auto;
-      
-    } */
+  
     
     .content {
         padding: 0;
@@ -92,6 +85,9 @@
         font-size: 24px;
         width: 100%;
     }
+  .con-1-text-p{
+line-height:25px;
+  }
     .con-1-text .btn-wrapper a span{
         padding: auto;
        font-size: 12px;
