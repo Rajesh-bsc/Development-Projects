@@ -1862,14 +1862,13 @@ h5,h6,p,a,li{
 input:active{
     border: none;
 }
-
  /* Small devices (landscape phones, 576px and up) */
 
  @media (max-width: 600px) { 
     *{
         box-sizing: border-box;
       /* overflow: hidden; */
-    
+     
         
     }
     h1,h2,h3,h4,h5{
@@ -1894,7 +1893,7 @@ input:active{
         overflow-x: hidden;
     }
     .container1{
-        height: 100vh;
+        height: 90vh;
         width: 100%;
     }
     .container1 .row1,.row2,.row3,.row4{
@@ -1942,7 +1941,7 @@ input:active{
     }
     .container2{
         width: 100%;
-        height: 200px;
+        height: 300px;
        
     }
     .container2 .column-con2{
@@ -1984,46 +1983,88 @@ input:active{
         display: none;
     }
     .container3{
-        width: 90%;
-        height: 600px;
+        width: 100%;
+        height: auto;
        padding-top: 50px;
         margin-top: 40px;
         /* display: block; */
         flex-direction: column;
-        row-gap: 30px;
+        row-gap: 10px;
         margin: auto;
-        
+       
     }
     .container3 .con3-col1 {
         width: 100%;
-        height: 250px;
         margin: 0;
+        padding: 0 10px 0 15px;
+        height: 280px;
+        
         
     }
+   
     .con3-col2{
         width: 100%;
-        height: 300px;
-        margin: 0 10px 0 10px;
-        padding: 0;
-       column-gap: 5px;
+        margin: auto;
+        height: 60%;
        
+        padding: 0 0 65px 0;
+       
+       flex-direction: column;
+      
     }
     .con3-col2 .con3-img{
         column-gap: 10px;
+       margin: auto;
+        padding: 0;
+        width: 95%;
+        height: 100%;
+        
+        flex-direction: column;
+       
+        overflow: hidden;
     }
-    .con3-col2 .con3-img1 img{
-        height: 250px;
-        width: 250px;
+    .con3-img1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+     .con3-img1 .c3-img{
+        
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .con3-img1 .con3-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 100%;
+        bottom: 0;
+        left: 50%;
+        /* transform: translate(-50%, -50%); */
+    }
+    .con3-img1:hover .con3-overlay {
+        bottom: 0;
+        top: 100%;
+        /* transform: translate(-50%, -50%) scale(1); */
+        color: white;
+    }
+    .con3-img .con3-img1:nth-child(2), .con3-img .con3-img1:nth-child(3){
+        display: none;
+        width: 0%;
     }
     .con3-col1 h3{
         font-size: 24px;
     }
     .con3-col1 p{
         font-size: 16px;
-        line-height: 20px;
+        line-height: 25px;
+        width: 100%;
     }
     .con3-col1 i{
-        font-size: 26px;
+        font-size: 32px;
     }
 
 
@@ -2067,8 +2108,8 @@ input:active{
         width: 350px;
        
         position: absolute;
-        top: 73%;
-        left: 77%;
+        top: 60%;
+        left: 70%;
         
         overflow: hidden;
     }
@@ -2086,10 +2127,10 @@ input:active{
     }
     .con4-col2{
         width: 95%;
-        height: 500px;
+        height: auto;
         margin: auto;
         display: block;
-       padding: 0 0 0 0;
+       padding: 0 0 60px 0;
       
     }
     .con4-col2 h2{
@@ -2217,8 +2258,8 @@ input:active{
     }
     .container6 .con6-box, .con7-box{
         display: block;
-        width: 100%;
-        margin: 0;
+        width: 95%;
+        margin: auto;
         padding: 0;
     }
     .discount-menu{
@@ -2316,6 +2357,7 @@ input:active{
         border: none;
         position: relative;
        margin-bottom: 10px;
+       overflow: visible;
     }
     .main-menu .food-menu:nth-child(2){
         display: block;
@@ -2330,7 +2372,7 @@ input:active{
         display: block;
         width: 100%;
         margin-bottom: 20px;
-      
+      overflow: visible;
     }
    
     .food1-slide{
@@ -2381,7 +2423,7 @@ input:active{
         position: relative;
         flex-direction: column;
         width: 100%;
-        height: 650px;
+        height: 700px;
         overflow: hidden;
     }
     .container9 .svg2, .svg3{
@@ -2395,25 +2437,29 @@ input:active{
         font-size: 26px;
     }
     .testimonial-container{
-        width: 95%;
-       right: 0;
-       left: 0;
-       bottom: 0;
-        padding: 0;
-        margin: auto;
-        position: absolute;
-        top: 30px;
-        
-
-        
+        width: 100%;
+       height: min-content;
+       
+       margin: 0;
+       padding: 0;
     }
-    .testimonail-1{
+    .testimonail-1 {
+        top: 23%;
+        right: 0;
+        left: 10%;
+        bottom: 0;
         
-        position: relative;
-        margin: 0;
-        padding: 0;
+         margin: 0;
+         position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0 15px 0 15px;
         
-        height: 400px;
+       
+    }
+    .test-info{
+        width: 100%;
+        
         
     }
     .testimonail-1 .test-img img{
@@ -2429,7 +2475,7 @@ input:active{
     }
     .testimonail-1 i{
         font-size: 16px;
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
     .container10{
         width: 100%;
@@ -2595,9 +2641,13 @@ input:active{
         width: 100%;
         overflow: hidden;
     }
+    .footer2-box{
+        padding: 25px 20px 0 20px;
+    }
     .footer2-box, .footer2-content1{
         width: 100%;
         overflow: hidden;
+       
     }
     .footer2-content1 h3{
         font-size: 24px;
@@ -2605,18 +2655,24 @@ input:active{
     }
     .footer-content3{
         width: 100%;
-        height: 200px;
         flex-direction: column;
         margin: 0;
-        padding: 0;
+        padding: 0 0 30px 0;
         justify-content: center;
         row-gap: 20px;
     }
+    
+    .footer-logo img{
+        width: 80px;
+        height: 80px;
+    }
     .footer-copyrights p{
+        padding-top: 15px;
         font-size: 14px;
+       
     }
     .footer-copyrights span{
-        font-size: 18px;
+        font-size: 17px;
     }
     .footer-logo, .footer-copyrights, .footer-social{
         width: 100%;
