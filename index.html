@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Restaurant</title>
     <link rel="stylesheet" href="restaurant.css">
     <script src="https://kit.fontawesome.com/bd71736a52.js" crossorigin="anonymous"></script>
@@ -12,8 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <link rel="stylesheet" href="restaurant-mobile-responsive.css">
 </head>
 <body>
    
@@ -40,7 +42,7 @@
                         <div class="menu-item">
                             <a href="#" class="blog">Blog <i class="fa-solid fa-angle-down"></i></a>
                             <div class="dropdown-content">
-                                <a href="#">Blog 1</a><hr>
+                                <a href="#blogs">Blog 1</a><hr>
                                 <a href="#">Blog 2</a><hr>
                                 <a href="#">Blog 3</a>
                             </div>
@@ -49,19 +51,19 @@
                         <div class="menu-item">
                             <a href="#" class="pages">Pages <i class="fa-solid fa-angle-down"></i></a>
                             <div class="dropdown-content">
-                                <a href="#">About us</a><hr>
-                                <a href="#"></a><hr>
-                                <a href="#">Pages Submenu Item 3</a>
+                                <a href="#about">About us</a><hr>
+                                <a href="#">Services</a><hr>
+                                <a href="#menu">Menu</a>
                             </div>
                         </div>
                         
                         <div class="menu-item">
-                            <a href="#" class="contact">Contact <i class="fa-solid fa-angle-down"></i></a>
-                            <div class="dropdown-content">
+                            <a href="#contact" class="contact">Contact <!--<i class="fa-solid fa-angle-down"></i>--></a>
+                            <!-- <div class="dropdown-content">
                                 <a href="#">Contact Submenu Item 1</a><hr>
                                 <a href="#">Contact Submenu Item 2</a><hr>
                                 <a href="#">Contact Submenu Item 3</a>
-                            </div>
+                            </div> -->
                         </div>
                     </nav>
                     
@@ -96,7 +98,8 @@
                     <div class="con-1-text">
                 <h5>Feeling Hungry?Let's</h5>
                 <h2>Discover Divine Taste Of Epicurean</h2>
-                
+                <p style="color: white;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
                 <div class="btn-wrapper">
                     <a href="#"><span class="btn">Book Table</span></a>
                   </div>
@@ -140,6 +143,8 @@
 
     <!-- food counter end -->
 
+    <!-- About section -->
+
 
 <div class="container3">
     
@@ -153,7 +158,7 @@
     <div class="con3-col2">
         <div class="con3-img">
             <div class="con3-img1">
-                <img src="Restaurant-img/trending-two-1.png" alt="con3"  >
+                <img class="c3-img" src="Restaurant-img/trending-two-1.png" alt="con3"  >
                 <div class="con3-overlay"> Chocolate Cream Dessert</div>
             </div>
             <div class="con3-img1">
@@ -168,14 +173,16 @@
     </div>
 
 </div>
-    
+
+
+<section id="about">
 <div class="container4">
     <div class="con4-col1">
         <div class="con4-cot">
         <div class="con4-cot1">
-            <img src="Restaurant-img/about-2.png" alt="">
+            <img class="about-2" src="Restaurant-img/about-2.png" alt="">
             <div class="con4-cot2">
-                <img src="Restaurant-img/about-3.png" alt="">
+                <img class="about-3" src="Restaurant-img/about-3.png" alt="">
                 <i class="fa-regular fa-circle-play"></i>
             </div>
         </div>
@@ -191,10 +198,10 @@
                 <div class="con4-content1">
             <h4><i class="fa-regular fa-circle-check"></i> Cozy Ambiance and Savor </h4> 
             <h4><i class="fa-regular fa-circle-check"></i> Tasty Culinary For Food Lovers </h4> 
-            <div class="btn-wrapper">
-                <a href="#"><span class="btn">Learn More</span></a>
-              </div>
+            
                 </div>
+                
+
                     <div class="con4-content2">
                         <div class="ceo">
                             <div class="ceo-img">
@@ -210,9 +217,15 @@
                         
                     </div>
             </div>
+            <div class="btn-wrapper">
+                <a href="#"><span class="btn">Learn More</span></a>
+              </div>
         </div>
     </div>
 </div>
+</section>
+
+
  <!-- Countdown Timer  -->
 <div class="container5">
     <svg class="position-absolute z-index-minus-one top-0 start-0" width="177" height="139" viewBox="0 0 177 139" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -254,7 +267,7 @@
         </div>
     
         <div class="times">
-            <div class="times-circle" id="secondsClock">
+            <div class="times-circle times-circle-1" id="secondsClock">
                 <img src="Restaurant-img/time-bg.svg" alt="time">
                 
                 <text class="countdown" id="seconds">00</text>
@@ -268,6 +281,9 @@
 </div>
 
     <!-- Countdown Timer End -->
+
+
+    <section id="menu">
  <!-- Food Menu -->
 <div class="container6">
     <div class="container6-title"><span style="color: #fd9900;">Discount Menu</span>
@@ -437,7 +453,11 @@
         <!-- Food menu Row3 End -->
 </div>
 
+
         <!-- Food Menu End -->
+    </section>
+
+
 
         <!-- chef list  -->
         <div class="container7">
@@ -513,16 +533,16 @@
                     <div class="menu-container">
                         <!-- Main Menu 1 -->
                         <div class="main-menu">
-                            <div class="food-menu">
+                            <div class="food-menu ">
                                 <div class="food1-slide">
                                 <img src="Restaurant-img/slider-bg-1.png" alt="mainmenu">
                                 <h3>Break Fast</h3>
-                                <ol><i class="fa-solid fa-arrow-left"></i> <i class="fa-solid fa-arrow-right"></i></ol>
+                                <ol><i class="fa-solid fa-arrow-left" onclick="prevSlide()"></i> <i class="fa-solid fa-arrow-right"  onclick="nextSlide()"></i></ol>
                                 <div class="slide1-overlay"></div>
                                 </div>
                             </div>
                         <!-- Food  Menu 1    -->
-                            <div class="food-menu">
+                            <div class="food-menu menus">
                                 <div class="food-img">
                                     <img src="Restaurant-img/menu-two-1.png" alt="">
                                 </div>
@@ -546,7 +566,7 @@
                             </div>
 
                             <!-- Food Menu 2 -->
-                            <div class="food-menu">
+                            <div class="food-menu ">
                                 <div class="food-img">
                                     <img src="Restaurant-img/menu-two-2.png" alt="">
                                 </div>
@@ -570,7 +590,7 @@
                             </div>
 
                             <!-- Food Menu 3 -->
-                            <div class="food-menu">
+                            <div class="food-menu ">
                                 <div class="food-img">
                                     <img src="Restaurant-img/menu-two-3.png" alt="">
                                 </div>
@@ -596,7 +616,7 @@
 
                         <!-- Main Menu 2 -->
                         <div class="main-menu">
-                            <div class="food-menu">
+                            <div class="food-menu menus">
                                 <div class="food1-slide">
                                 <img src="Restaurant-img/slider-bg-2.png" alt="mainmenu">
                                 <h3>Lunch</h3>
@@ -679,7 +699,7 @@
 
                         <!-- Main Menu 3 -->
                         <div class="main-menu">
-                            <div class="food-menu">
+                            <div class="food-menu menus">
                                 <div class="food1-slide">
                                 <img src="Restaurant-img/slider-bg-3.png" alt="mainmenu">
                                 <h3>Dinner</h3>
@@ -794,17 +814,18 @@
                 </div>
                 
             </div>
-            <div class="pagination">
+            <!-- <div class="pagination">
                 <div class="pagination-container">
                     <div class="pagination1">
                         <span></span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- Testimonial End -->
 
+        <section id="contact">
         <div class="container10">
             <div class="container10-overlay"></div>
             <div class="contact-container">
@@ -864,7 +885,10 @@
             </div>
         </div>
         <!-- container10 end -->
+    </section>
 
+
+    <section id="blogs">
         <div class="container11">
                 <div class="blog-container">
                     <div class="blog-container-column">
@@ -909,6 +933,9 @@
         </div>
 
         <!-- container11 end -->
+
+    </section>
+
 
         <div class="container12">
             <div class="footer-container">
