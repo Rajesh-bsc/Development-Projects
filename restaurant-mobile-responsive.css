@@ -1,6 +1,6 @@
  /* Small devices (landscape phones, 576px and up) */
 
- @media (max-width: 600px) { 
+ @media (max-width: 360px) { 
     *{
         box-sizing: border-box;
       /* overflow: hidden; */
