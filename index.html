@@ -1060,5 +1060,28 @@
                 </div>
             </div>
         </div>
+	 <script>
+        
+            //humburger menu
+            const menubar= document.querySelector(".hum-menu");
+            const humburger= document.querySelector(".fa-bars");
+            const closebar= document.querySelector(".fa-xmark");
+            const menulist= document.querySelector("nav ul");
+            
+            closebar.style.display="none";
+            
+            humburger.addEventListener("click",()=>{
+            menulist.classList.toggle("showmenu");
+            // menulist.animate=" transition: all .5s ease"
+            humburger.style.display="none";
+            closebar.style.display="block";
+            })
+            closebar.addEventListener("click",()=>{
+            menulist.classList.remove("showmenu");
+            closebar.style.display="none";
+            humburger.style.display="block";
+            })
+            
+            </script>
 </body>
 </html>
